@@ -35,7 +35,8 @@
     "prepare": "tsdx build",
     "collate": "node bin/collate.js",
     "assemble": "node bin/assemble.js",
-    "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json,vue}\""
+    "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json,vue}\"",
+    "esbuild": "node build.js"
   },
   "peerDependencies": {
     "react": ">=16"
@@ -57,11 +58,18 @@
     "@types/react": "^16.9.43",
     "@types/react-dom": "^16.9.8",
     "chalk": "^4.1.0",
-    "husky": "^4.2.5",
+    "cross-blob": "^2.0.0",
+    "esbuild": "^0.12.19",
+    "form-data": "^4.0.0",
+    "husky": "^7.0.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "tsdx": "^0.14.1",
     "tslib": "^2.0.0",
-    "typescript": "^3.9.7"
+    "typescript": "^3.9.7",
+    "web-file-polyfill": "^1.0.1"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.1"
   }
 }
